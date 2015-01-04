@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PingPong</title>
+    <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+
+<body>
+    <header>
+        PingPong Game.
+    </header>
+    <input id="speed" name="speed" type="text">
+    <button id="speed-button" onclick="setSpeed()">Set Speed</button>
+    <div id="scoreboard">
+        <div class="score">PlayerA :<span id="scoreA">0</span>
+        </div>
+        <div class="score">PlayerB :<span id="scoreB">0</span>
+        </div>
+        <div class="speed">Speed :<span id="showspeed">5</span>
+        </div>
+    </div>
+    <input type="checkbox" id="AIA">Bot A
+    <input type="checkbox" id="AIB" value="Bot B">Bot B
+    <div id="game">
+        <div id="playground">
+            <div id="paddleA" class="paddle"></div>
+            <div id="paddleB" class="paddle"></div>
+            <div id="ball"></div>
+        </div>
+    </div>
+    <footer>
+        This is a example of creating a PingPong game.
+    </footer>
+    <script src="Script/jquery-2.1.3.min.js"></script>
+    <script src="Script/html5game.pingpong.js"></script>
+    <script src="Script/html5game.pingpong.ai.js"></script>
+</body>
+
+</html>
